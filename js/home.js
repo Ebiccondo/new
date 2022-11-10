@@ -24,7 +24,7 @@ function GetData(PlaceID, gamesdata) {
     }, 4100);
     $('#CaptchaGame').css('display', 'none');
     $('#GameLoading').css('display', 'block');
-    var GetUniverseID = "https://script.google.com/macros/s/AKfycbybUKNxXVIQQ0qbBiwoP_EWHE7IY6VdE3-3IJ4eZIcmPzx8omMbFG-6Poca83LPS9fw/exec"+ "GetGameName" + PlaceID.split(",")[1]
+    var GetUniverseID = "https://script.google.com/macros/s/AKfycbxnfZGp6aJq_18D__5NmKj3TUDsWJ7tRMQ2bx62EJNzqohqroW9dbErlqjx78gQYGrq/exec?sheet=Global&key=GetGameName" + PlaceID.split(",")[1]
     fetch(GetUniverseID)
     .then(function(response) {
          return response.json();
